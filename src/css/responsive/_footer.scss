@@ -1,0 +1,44 @@
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .footer {
+    &__wrap {
+      width: $minDesktopWidth;
+    }
+  }
+}
+@media screen and (min-device-width: 640px) and (max-device-width: 767px) {
+  .footer {
+    &__wrap {
+      width: $tableWidth;
+    }
+  }
+}
+@media screen and (min-device-width: 380px) and (max-device-width: 639px) {
+  .footer {
+    &__wrap {
+      width: $mobileWidth1;
+    }
+    &__menu {
+      display: none;
+    }
+  }
+  .burger-menu {
+    display: flex;
+  }
+}
+@media screen and (min-device-width: 240px) and (max-device-width: 379px) {
+  .footer {
+    margin-top: 100px;
+    &__wrap {
+      width: $mobileWidth2;
+    }
+    &__menu {
+      display: none;
+    }
+    &__company-info {
+      display: none;
+    }
+  }
+  .burger-menu {
+    display: flex;
+  }
+}

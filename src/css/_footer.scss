@@ -1,0 +1,74 @@
+.footer {
+  background-color: $colorGrey1;
+  margin-top: 202px;
+  height: 220px;
+  width: 100%;
+  &__wrap {
+    width: $desktopWith;
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__company-info {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    height: 117px;
+    justify-content: space-between;
+
+    & a {
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.86;
+      letter-spacing: 0.4px;
+      text-align: left;
+      color: #ffffff;
+      font-family: 'PT Sans', sans-serif;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__developer {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__developer-img {
+    width: 36px;
+    height: 38px;
+    background-image: url(./Images/company.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__developer-info {
+    margin-left: 9px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+  }
+}

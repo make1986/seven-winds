@@ -1,0 +1,134 @@
+.products {
+  margin-left: 0;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 250px;
+    height: 380px;
+    background-color: $colorGrey2;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  &__image {
+    width: 210px;
+    height: 209px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  &__name {
+    position: absolute;
+    left: 20px;
+    top: 250px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #767676;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  &__price {
+    left: 18px;
+    bottom: 14px;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.64;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #444444;
+    font-family: 'PT Sans', sans-serif;
+    position: absolute;
+  }
+
+  &__cart-button {
+    background-image: url(./Images/cart.png);
+    width: 28px;
+    height: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 36px;
+    bottom: 17px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &__pages-nav {
+    display: flex;
+    width: 174px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    justify-content: space-between;
+  }
+
+  &__pages-but {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: 7.9px;
+    text-align: center;
+    color: #767676;
+    cursor: pointer;
+
+    &:hover {
+      color: #444444;
+    }
+
+    &_active {
+      font-family: 'PT Sans', sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 10.2px;
+      color: #444444;
+      cursor: pointer;
+    }
+  }
+  &__desc {
+    margin-top: 67px;
+    padding-top: 28px;
+    border-top: 1px solid $colorGrey2;
+    display: flex;
+    justify-content: space-between;
+
+    & span {
+      width: 348px;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: 0.4px;
+      text-align: left;
+      color: #767676;
+      font-family: 'PT Sans', sans-serif;
+    }
+  }
+}

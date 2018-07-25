@@ -1,0 +1,36 @@
+@media screen and (min-device-width: 380px) and (max-device-width: 639px) {
+  .feedback {
+    &__body {
+      width: $mobileWidth1;
+    }
+    &__wrap {
+      width: 300px;
+    }
+    &__input-item {
+      & textarea {
+        width: 300px;
+      }
+    }
+    &__input-text {
+      width: 300px;
+    }
+  }
+}
+@media screen and (min-device-width: 240px) and (max-device-width: 379px) {
+  .feedback {
+    &__body {
+      width: $mobileWidth2;
+    }
+    &__wrap {
+      width: 155px;
+    }
+    &__input-item {
+      & textarea {
+        width: 155px;
+      }
+    }
+    &__input-text {
+      width: 155px;
+    }
+  }
+}

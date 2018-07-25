@@ -1,0 +1,38 @@
+$desktopWith: 980px;
+$colorGrey1: rgb(119, 119, 119);
+$colorGrey2: rgb(220, 220, 220);
+
+$minDesktopWidth: 740px;
+$tableWidth: 620px;
+$mobileWidth1: 360px;
+$mobileWidth2: 235px;
+
+@import 'css/setting';
+@import 'css/fonts';
+@import 'css/header';
+@import 'css/menu';
+@import 'css/slider';
+@import 'css/breadcrumbs';
+@import 'css/navigation';
+@import 'css/products';
+@import 'css/footer';
+@import 'css/feedback';
+@import 'css/burger';
+
+.content {
+  width: $desktopWith;
+  margin: auto;
+
+  &__general-content {
+    margin-top: 26px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@import 'css/responsive/header';
+@import 'css/responsive/menu';
+@import 'css/responsive/slider';
+@import 'css/responsive/content';
+@import 'css/responsive/footer';
+@import 'css/responsive/feedback';

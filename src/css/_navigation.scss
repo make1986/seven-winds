@@ -1,0 +1,77 @@
+.navigation {
+  width: 178px;
+  min-width: 178px;
+
+  &__wrap {
+    width: 100%;
+  }
+
+  &__item {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #767676;
+    font-family: 'PT Sans', sans-serif;
+    & span {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        color: #010101;
+      }
+    }
+    &_active {
+      text-decoration: underline;
+    }
+  }
+  &__subwrap {
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+  &__subitem {
+    margin-left: 20px;
+    list-style-type: disc;
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+
+    &:hover {
+      color: #010101;
+      text-decoration: underline;
+    }
+  }
+
+  &__price {
+    margin-top: 110px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__price-img {
+    width: 97px;
+    height: 110px;
+    background-image: url(./Images/ms-excel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__price-txt {
+    margin-top: 6px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.83;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #444444;
+    font-family: 'PT Sans', sans-serif;
+  }
+}

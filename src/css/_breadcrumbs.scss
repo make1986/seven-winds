@@ -1,0 +1,39 @@
+.breadcrumbs {
+  width: $desktopWith;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #767676;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+
+    &::after {
+      content: '/';
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    &:last-child {
+      cursor: default;
+
+      &::after {
+        content: '';
+        margin: 0;
+      }
+    }
+  }
+}
